@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
-    <nav className="bg-navbg p-4 sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-navbg sticky flex justify-center items-center z-50 h-[75px] border-1 border-dotted border-[#c7c7c7] bg-white">
+      <div className="w-full mx-10 flex justify-between items-center">
         <div className="text-xl font-bold">
           <a href="/">YourLogo</a>
         </div>
@@ -10,12 +10,10 @@ const Navbar = () => {
           <a href="/work" className="hover:text-primary">Work</a>
           <a href="/blog" className="hover:text-primary">Blog</a>
         </div>
-        <div className="md:hidden">
+        <div className="">
           {/* Mobile menu button would go here */}
-          <button className="text-white">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
+          <button className="text-black">
+           button
           </button>
         </div>
       </div>
