@@ -1,12 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
 import { createBrowserRouter, RouterProvider, Outlet, Navigate } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Work from './pages/Work';
+import Blog from './pages/Blog';
 
+// Layout component
 const Layout = () => {
   return (
-    <div className='font-inter bg-mainbg min-h-screen text-white'>
+    <div className='font-inter bg-mainbg min-h-screen text-black'>
       <Navbar />
       <Outlet />
       <Footer />
@@ -15,14 +18,38 @@ const Layout = () => {
 };
 
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      helo
-    </>
-  )
+
+
+// Router configuration
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/work',
+        element: <Work />,
+      },
+      {
+        path: '/blog',
+        element: <Blog />,
+      },
+      {
+        path: '*',
+        element: <Navigate to="/" />,
+      },
+    ],
+  },
+]);
+
+// Main App component
+function App() {
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
