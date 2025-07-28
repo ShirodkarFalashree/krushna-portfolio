@@ -2,8 +2,10 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>
-      hero
+<div className='text-3xl'>
+      Video Edits
+That
+Stand Out!
     </div>
   )
 }
