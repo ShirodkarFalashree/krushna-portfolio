@@ -11,10 +11,9 @@ import { GridBackground } from './components/bg';
 const Layout = () => {
   return (
     <div className='font-inter bg-mainbg min-h-screen text-black'>
+      
       <Navbar />
-      <GridBackground>
       <Outlet />
-      </GridBackground>
       <Footer />
     </div>
   );

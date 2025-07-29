@@ -94,15 +94,15 @@ const CompaniesStrip = () => {
             mask-image: linear-gradient(
               to right, 
               transparent 0%, 
-              black 10%, 
-              black 90%, 
+              white 10%, 
+              white 90%, 
               transparent 100%
             );
             -webkit-mask-image: linear-gradient(
               to right, 
               transparent 0%, 
-              black 10%, 
-              black 90%, 
+              white 10%, 
+              white 90%, 
               transparent 100%
             );
           }
@@ -120,13 +120,13 @@ const CompaniesStrip = () => {
 
           .blur-edges::before {
             left: 0;
-            background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+            background: linear-gradient(90deg, rgba(255,255,255) 0%, transparent 100%);
             backdrop-filter: blur(4px);
           }
 
           .blur-edges::after {
             right: 0;
-            background: linear-gradient(270deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+            background: linear-gradient(270deg, rgba(255,255,255) 0%, transparent 100%);
             backdrop-filter: blur(4px);
           }
 
@@ -135,15 +135,15 @@ const CompaniesStrip = () => {
               mask-image: linear-gradient(
                 to right, 
                 transparent 0%, 
-                black 5%, 
-                black 95%, 
+                white 5%, 
+                white 95%, 
                 transparent 100%
               );
               -webkit-mask-image: linear-gradient(
                 to right, 
                 transparent 0%, 
-                black 5%, 
-                black 95%, 
+                white 5%, 
+                white 95%, 
                 transparent 100%
               );
             }
@@ -158,14 +158,14 @@ const CompaniesStrip = () => {
       </style>
 
       <div className="w-full  relative overflow-hidden py-8 blur-edges">
-        <div className="gradient-mask">
+        <div className="">
           <div className="flex animate-scroll whitespace-nowrap">
             {duplicatedCompanies.map((company, index) => {
               const IconComponent = icons[company.icon];
               return (
                 <div
                   key={`${company.title}-${index}`}
-                  className="flex-shrink-0 mx-4 px-4 py-2 bg-[#0D0D0D] rounded-3xl shadow-lg flex items-center justify-center gap-2 text-white"
+                  className="flex-shrink-0 mx-4 px-4 py-2 bg-white border border-dotted border-[#EEEEEE] text-black rounded-3xl shadow-lg flex items-center justify-center gap-2 "
                   style={{ minWidth: '180px' }}
                 >
                   <div className="">

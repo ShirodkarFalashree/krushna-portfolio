@@ -29,9 +29,9 @@ export function GridBackground({ children }) {
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white  [mask-image:radial-gradient(transparent_20%,black)]" />
 
             {/* Text content */}
-            <p className="relative z-20 bg-gradient-to-b  from-white to-white">
+            <div className="relative z-20 bg-gradient-to-b  from-white to-white">
                 {children}
-            </p>
+            </div>
         </div>
     );
 }
