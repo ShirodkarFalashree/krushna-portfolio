@@ -13,12 +13,12 @@ const Layout = () => {
     <div className='font-inter bg-mainbg min-h-screen text-black'>
       
       <Navbar />
-      <div style={{
+      <div className='bg-[#FCFCFC]' style={{
       backgroundImage: `
-        linear-gradient(to right, #dedede45 1px, transparent 1px),
-        linear-gradient(to bottom, #dedede45 1px, transparent 1px)
+        linear-gradient(to right, #F4F4F4 1px, transparent 1px),
+        linear-gradient(to bottom, #F4F4F4 1px, transparent 1px)
       `,
-      backgroundSize: '9px 9px'
+      backgroundSize: '10px 10px'
     }}>
 
       <Outlet />

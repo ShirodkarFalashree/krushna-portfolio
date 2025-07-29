@@ -24,9 +24,9 @@ const Hero = () => {
             <p className="text-[#171717] text-[18px] leading-[27px] mb-8">
               Hook faster. Edit smarter. Grow your audience with <br />scroll-stopping YouTube videos.
             </p>
-            <button className="bg-black text-white rounded-full px-6 py-3 flex items-center shadow-lg mb-2">
+            <button className="bg-[#171717] text-white rounded-full px-4 py-3 flex items-center shadow-lg mb-2 cursor-pointer">
               Book a Call
-              <span className="ml-2">&rarr;</span>
+              <span className="ml-2 bg-white  rounded-full h-10 w-10 flex justify-center items-center text-black">&rarr;</span>
             </button>
             <p className="text-[#171717] text-[16px] leading-[25px] mt-2">No pressure, just possibilities.</p>
           </div>
