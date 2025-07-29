@@ -13,7 +13,16 @@ const Layout = () => {
     <div className='font-inter bg-mainbg min-h-screen text-black'>
       
       <Navbar />
+      <div style={{
+      backgroundImage: `
+        linear-gradient(to right, #dedede45 1px, transparent 1px),
+        linear-gradient(to bottom, #dedede45 1px, transparent 1px)
+      `,
+      backgroundSize: '9px 9px'
+    }}>
+
       <Outlet />
+      </div>
       <Footer />
     </div>
   );
