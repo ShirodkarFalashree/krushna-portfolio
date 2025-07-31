@@ -46,12 +46,12 @@ export default function Process() {
             <span className="px-4 py-2 w-fit text-[16px] leading-[22px] rounded-full border border-dotted border-[#ebebeb] bg-white tracking-wide text-[#171717] flex justify-center items-center gap-2 "><span><Sparkle className="h-2 w-2 text-[#FF5000] " fill="#FF5000" /></span> Process</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-2 leading-snug">
-          How It Works?
-        </h2>
-      
+            How It Works?
+          </h2>
+
           <p className="text-[18px] text-[#212121] leading-[27px text-center max-w-xl">
-          A quick overview of how we work together to make your <br/>edit best in class!
-        </p>
+            A quick overview of how we work together to make your <br />edit best in class!
+          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {processSteps.map((step) => (
