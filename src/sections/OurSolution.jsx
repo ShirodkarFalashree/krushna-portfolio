@@ -1,9 +1,11 @@
 import React from "react";
-import { Sparkle, XCircle, CheckCircle } from "lucide-react";
+import { Sparkle, XCircle, CheckCircle, CircleCheck } from "lucide-react";
 
 const OurSolution = () => {
   return (
-    <section className="py-16">
+    <div className="w-full flex justify-center">
+
+<section className="py-16 w-[900px]">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12 flex flex-col items-center">
         <div className="mb-3">
@@ -22,13 +24,13 @@ const OurSolution = () => {
       </div>
 
       {/* Problem vs Solution Grid */}
-      <div className="max-w-6xl mx-auto p-4 grid grid-cols-1 rounded-2xl md:grid-cols-2 gap-6 bg-white">
+      <div className="max-w-6xl mx-auto px-4 pt-8 pb-4 grid grid-cols-1 rounded-2xl md:grid-cols-2 gap-4  border-2 border-dotted border-[#ebebeb]   bg-white">
         {/* Creators Problem */}
-        <div>
+        <div className="w-full flex flex-col items-center ">
           <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
             Creators Problem
           </h3>
-          <div className="bg-white border border-[#ebebeb] rounded-2xl p-6 shadow-sm">
+          <div className=" border-2 border-dotted border-[#ebebeb]   bg-white w-full  rounded-2xl p-6 ">
             <ul className="space-y-4 text-[16px] text-[#212121]">
               <li className="flex items-center gap-2">
                 <XCircle className="text-red-500 w-5 h-5" /> Editing takes me
@@ -55,30 +57,30 @@ const OurSolution = () => {
         </div>
 
         {/* Our Solution */}
-        <div>
+        <div className="w-full flex flex-col items-center">
           <h3 className="text-xl font-semibold mb-4 text-center md:text-left text-[#FF5000]">
             Our Solution
           </h3>
-          <div className="bg-[#171717] text-white rounded-2xl p-6 shadow-md">
+          <div className="bg-[#171717] w-full text-white rounded-2xl p-6 shadow-md">
             <ul className="space-y-4 text-[16px]">
               <li className="flex items-center gap-2">
-                <CheckCircle className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
+                <CircleCheck className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
                 Done–for–you edits, always on time.
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
+                <CircleCheck className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
                 Fast turnaround
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
+                <CircleCheck className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
                 You record. We handle the rest.
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
+                <CircleCheck className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
                 Cinematic, clean, and branded.
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
+                <CircleCheck className="text-[#fff] w-5 h-5" fill="#FF5000" />{" "}
                 Burned-in, style-matched captions.
               </li>
             </ul>
@@ -86,6 +88,8 @@ const OurSolution = () => {
         </div>
       </div>
     </section>
+    </div>
+   
   );
 };
 

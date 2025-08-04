@@ -1,6 +1,6 @@
 import { Sparkle } from "lucide-react";
 import React from "react";
-
+import rc1 from "../assets/reviewssection1.avif"
 // Example: update THIS value if your navbar is taller/shorter
 const NAVBAR_HEIGHT = 80; // px
 
@@ -109,22 +109,23 @@ export default function ReviewsSection() {
         <div className="flex-1 flex flex-col  justify-center items-center">
           <div className="w-full flex flex-col items-center">
             {/* Sticky on md+, out of the way on mobile */}
-            <div className="bg-black text-white rounded-2xl shadow-xl p-8 flex flex-col items-center max-w-sm w-full md:sticky md:top-[92px] md:self-start">
+            <div className="bg-[#171717]  text-white rounded-2xl shadow-xl p-8 flex flex-col items-center max-w-sm md:sticky md:top-[92px] md:self-start">
               <div className="mb-2">
                 <span className=" w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-4xl">👍</span>
+                  <span className="text-4xl"><img src={rc1} /></span>
                 </span>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-center">
+              <h3 className="text-[32px] leading-[43px] text-[#FCFCFC] w-[350px] font-semibold mb-6 text-center">
                 Book a 15-min intro call
               </h3>
-              <button className="bg-white text-black font-semibold px-6 py-2 rounded-full shadow hover:bg-orange-500 hover:text-white transition mb-4">
-                Book a Call <span className="ml-2 text-orange-500">&rarr;</span>
-              </button>
-              <p className="mb-1 text-gray-300">Prefer to Email?</p>
+              <button className="bg-white text-[#171717] rounded-full px-4 py-3 flex items-center shadow-lg mb-6 cursor-pointer">
+              Book a Call
+              <span className="ml-2 bg-[#171717]  rounded-full h-10 w-10 flex justify-center items-center text-white">&rarr;</span>
+            </button>
+              <p className="mb-1 text-[#FFFFFF] text-[16px]">Prefer to Email?</p>
               <a
                 href="mailto:ajoy.sayhello@gmail.com"
-                className="text-orange-300 underline text-sm mb-4"
+                className="text-[#98A1AE] underline text-[16px] mb-4"
               >
                 ajoy.sayhello@gmail.com
               </a>
